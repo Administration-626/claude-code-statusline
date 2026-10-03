@@ -55,9 +55,9 @@ try:
 except Exception:
     pass
 
-# 单行状态栏：[模型] (灰色级别) | 目录 | 分支 | 百分比 已用量/总容量
+# 单行状态栏：模型 灰色级别 | 目录 | 分支 | 百分比 已用量/总容量
 status_line = (
-    f"\033[36m[{model}]\033[0m \033[90m({effort})\033[0m"
+    f"\033[36m{model}\033[0m \033[90m{effort}\033[0m"
     f" | \033[37m{short_dir}\033[0m{branch}"
     f" | \033[33m{used_pct_fmt}\033[0m \033[36m{used_tokens}/{window_k}\033[0m"
 )
